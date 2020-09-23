@@ -20,12 +20,7 @@ function register(user_name, email, password, onSuccess, onFailure) {
 }
 
 // 登録ボタンを押下
-export default function handleRegister(state) {
-    var userName = state.userName;
-    var email = state.email;
-    var password = state.password;
-    var confirmPassword = state.confirmPassword;
-
+export default function handleRegister(userName, email, password, confirmPassword) {
     var onSuccess = function registerSuccess(result) {
         var cognitoUser = result.user;
         console.log('user name is ' + cognitoUser.getUsername());

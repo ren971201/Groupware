@@ -15,9 +15,7 @@ function login(userName, password, onSuccess, onFailure) {
 }
 
 // サインインボタンを押下したときの処理
-export default function handleLognin(state) {
-    var userName = state.userName;
-    var password = state.password;
+export default function handleLognin(userName, password) {
     login(userName, password,
         // サインイン成功処理
         function signinSuccess() {

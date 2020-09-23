@@ -12,9 +12,7 @@ function verify(email, code, onSuccess, onFailure) {
 }
 
 // 確認
-export default function handleVerify(state) {
-    const userName = state.userName;
-    const code = state.code;
+export default function handleVerify(userName, code) {
     verify(userName, code,
         function verifySuccess(result) {
             console.log('call result: ' + result);
