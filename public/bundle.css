@@ -1,0 +1,236 @@
+.contents {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+
+.submit {
+  cursor: pointer; }
+
+.verfy {
+  color: #1E90FF; }
+
+.header {
+  background-color: #1E90FF;
+  font-size: 20px;
+  width: 100%;
+  height: 60px; }
+  .header h1 {
+    display: inline-block;
+    padding-left: 500px; }
+  .header .title {
+    text-align: center; }
+
+.menu_btn {
+  display: inline-block;
+  margin-top: 9px;
+  margin-left: 9px;
+  background-color: transparent;
+  outline: none;
+  border: none; }
+  .menu_btn > span {
+    height: 2px;
+    width: 35px;
+    display: block;
+    margin-bottom: 9px;
+    background-color: white; }
+
+.btn {
+  display: inline-block;
+  margin: 9px;
+  background-color: white;
+  outline: none;
+  text-align: right; }
+  .btn a {
+    color: #1E90FF; }
+
+.register {
+  margin-left: 200px; }
+
+.wrapper {
+  background: white;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 400px; }
+  .wrapper.form-success .container h1 {
+    transform: translateY(85px); }
+  .wrapper h1 {
+    color: #1E90FF; }
+  .wrapper ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #1E90FF;
+    font-weight: 300; }
+  .wrapper :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #1E90FF;
+    opacity: 1;
+    font-weight: 300; }
+  .wrapper ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #1E90FF;
+    opacity: 1;
+    font-weight: 300; }
+  .wrapper :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #1E90FF;
+    font-weight: 300; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0;
+  height: 400px;
+  text-align: center; }
+  .container h1 {
+    font-size: 40px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-put;
+    font-weight: 200; }
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2; }
+  form input {
+    display: block;
+    appearance: none;
+    outline: 0;
+    border: 1px solid fade(white, 40%);
+    background-color: fade(white, 20%);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #1E90FF;
+    transition-duration: 0.25s;
+    font-weight: 300; }
+    form input::placeholder {
+      opacity: 0.5; }
+    form input:hover {
+      background-color: fade(white, 40%); }
+    form input:focus {
+      background-color: white;
+      width: 300px;
+      color: #1E90FF; }
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: #1E90FF;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.25s; }
+    form button:hover {
+      opacity: 0.5; }
+
+.side-menu {
+  background-color: #1E90FF;
+  width: 250px;
+  height: auto;
+  float: left;
+  padding: auto;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #1E90FF; }
+
+#side_top {
+  color: white; }
+
+.top-page {
+  color: #1E90FF;
+  width: 100%;
+  margin: 30px; }
+
+.information_item {
+  width: 600px; }
+  .information_item_title {
+    color: white;
+    background-color: #1E90FF;
+    text-align: center; }
+  .information_item_item {
+    border: 1px solid #1E90FF;
+    margin-top: 4px;
+    padding-left: 16px; }
+
+.event_title {
+  color: #1E90FF;
+  margin-top: 50px; }
+
+.event_item div {
+  margin-top: 4px;
+  margin-right: 4px; }
+
+.event_item_event {
+  width: 300px;
+  display: inline-block;
+  text-align: center; }
+  .event_item_event_title {
+    color: white;
+    background-color: #1E90FF; }
+  .event_item_event_item {
+    border: 1px solid #1E90FF; }
+
+.event_item_schedule {
+  width: 300px;
+  display: inline-block;
+  text-align: center; }
+  .event_item_schedule_title {
+    color: white;
+    background-color: #1E90FF; }
+  .event_item_schedule_item {
+    border: 1px solid #1E90FF; }
+
+.event_item_place {
+  width: 300px;
+  display: inline-block;
+  text-align: center; }
+  .event_item_place_title {
+    color: white;
+    background-color: #1E90FF; }
+  .event_item_place_item {
+    border: 1px solid #1E90FF; }
+
+.event_item_start-time {
+  width: 150px;
+  display: inline-block;
+  text-align: center; }
+  .event_item_start-time_title {
+    color: white;
+    background-color: #1E90FF; }
+  .event_item_start-time_item {
+    border: 1px solid #1E90FF; }
+
+.event_item_end-time {
+  width: 150px;
+  display: inline-block;
+  text-align: center; }
+  .event_item_end-time_title {
+    color: white;
+    background-color: #1E90FF; }
+  .event_item_end-time_item {
+    border: 1px solid #1E90FF; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 300; }
+
+body {
+  height: 500px;
+  color: white;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  min-height: 100%; }
+

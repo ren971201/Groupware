@@ -1,0 +1,108 @@
+.top-page {
+    color: $cMain;
+    width: 100%;
+    margin: 30px;
+}
+
+.information {
+    &-item {
+        width: 600px;
+
+        &-title{
+            color: $cWhite;
+            background-color: $cMain;
+            text-align: center;
+        }
+    
+        &-item{
+            border: 1px solid $cMain;
+            margin-top: 4px;
+            padding-left: 16px;
+        }
+    }
+}
+
+.event {
+    &-title{
+        color: $cMain;
+        margin-top: 50px;
+    }
+
+    &-item{
+        div {
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+
+        &-event {
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+
+            &-title {
+                color: $cWhite;
+                background-color: $cMain;
+            }
+            
+            &-item {
+                border: 1px solid $cMain;
+            }
+        }
+        &-schedule {
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+
+            &-title {
+                color: $cWhite;
+                background-color: $cMain;
+            }
+            
+            &-item {
+                border: 1px solid $cMain;
+            }
+        }
+        &-place {
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+
+            &-title {
+                color: $cWhite;
+                background-color: $cMain;
+            }
+            
+            &-item {
+                border: 1px solid $cMain;
+            }
+        }
+        &-start-time {
+            width: 150px;
+            display: inline-block;
+            text-align: center;
+
+            &-title {
+                color: $cWhite;
+                background-color: $cMain;
+            }
+            
+            &-item {
+                border: 1px solid $cMain;
+            }
+        }
+        &-end-time {
+            width: 150px;
+            display: inline-block;
+            text-align: center;
+
+            &-title {
+                color: $cWhite;
+                background-color: $cMain;
+            }
+            
+            &-item {
+                border: 1px solid $cMain;
+            }
+        }
+    }
+}

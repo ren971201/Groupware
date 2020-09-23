@@ -1,0 +1,13 @@
+.contents{
+    display:flex;
+    flex-direction:row;
+    height: 100%;
+}
+
+.submit {
+    cursor: pointer;
+}
+
+.verfy {
+    color: $cMain;
+}

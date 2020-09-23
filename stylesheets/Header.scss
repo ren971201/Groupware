@@ -1,0 +1,48 @@
+.header {
+    background-color:$cMain;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+
+    h1 {
+        display: inline-block;
+        padding-left: 500px;    
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+.menu-btn {
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 9px; 	
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    & > span {
+        height: 2px;
+        width: 35px;
+        display: block;
+        margin-bottom: 9px;
+        background-color: $cMenuOpen;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin: 9px;
+    background-color: white;
+    outline: none;
+    text-align: right;
+
+    a{
+        color: $cMain;
+    }
+}
+
+.register {
+    margin-left: 200px;
+}

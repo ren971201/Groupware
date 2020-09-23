@@ -1,0 +1,113 @@
+.wrapper{
+	background: white;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	
+	&.form-success{
+		.container{
+			h1{
+				transform: translateY(85px);
+			}
+		}
+    }
+    
+        
+    h1 {
+		color: $cCharForm;
+    }
+	
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color:    $cCharForm;
+		font-weight: 300;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $cCharForm;
+        opacity:  1;
+		font-weight: 300;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    $cCharForm;
+        opacity:  1;
+		font-weight: 300;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color:    $cCharForm;
+		font-weight: 300;
+	}
+}
+
+.container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 80px 0;
+	height: 400px;
+	text-align: center;
+	
+	h1{
+		font-size: 40px;
+		transition-duration: 1s;
+		transition-timing-function: ease-in-put;
+		font-weight: 200;
+	}
+}
+
+form{
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+	
+	input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 1px solid fade(white, 40%);
+		background-color: fade(white, 20%);
+		width: 250px;
+		
+		border-radius: 3px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		
+		color: $cCharForm;
+		
+		transition-duration: 0.25s;
+        font-weight: 300;
+        
+        &::placeholder {
+            opacity: 0.5;
+        }
+		
+		&:hover{
+			background-color: fade(white, 40%);
+		}
+		
+		&:focus{
+			background-color: white;
+			width: 300px;
+			color: $cMain;
+		}
+	}
+	
+	button{
+		appearance: none;
+		outline: 0;
+		background-color: $cMain;
+		border: 0;
+		padding: 10px 15px;
+		color: $cChar;
+		border-radius: 3px;
+		width: 250px;
+		cursor: pointer;
+		font-size: 18px;
+		transition-duration: 0.25s;
+		
+		&:hover{
+            opacity: 0.5;
+        }
+	}
+}
