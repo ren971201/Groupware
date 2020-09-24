@@ -23,3 +23,10 @@ export function changeVerifyForm(userName, code) {
         code: code
     }
 }
+
+export function invertVisible(visible) {
+    return {
+        type: 'INVERT_VISIBLE',
+        visible: visible
+    }
+}

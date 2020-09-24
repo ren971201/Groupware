@@ -64,9 +64,36 @@ function verifyReducer (state = initVerifyState, action){
     }
 }
 
+// 
+const initMenuState = {
+    visible: false
+}
+
+function menuReducer(state = initMenuState, action) {
+    switch(action.type){
+        case 'INVERT_VISIBLE':
+            if(action.visible){
+                return ({
+                    visible: false
+                });
+            }
+            else if(!action.visible){
+                return ({
+                    visible: true
+                });
+            }
+            
+            return state;
+
+        default:
+            return state;
+    }
+}
+
 // リデューサーを統合して出力
 export default combineReducers({
     loginReducer,
     registerReducer,
-    verifyReducer
+    verifyReducer,
+    menuReducer
 });
