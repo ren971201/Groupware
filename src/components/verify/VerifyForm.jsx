@@ -7,22 +7,22 @@ import { changeVerifyForm } from '../../actions/index';
 class VerifyForm extends React.Component {
     constructor(props){
         super(props);
-        this.doChangeUserName = this.doChangeUserName.bind(this);
+        this.doChangeUsername = this.doChangeUsername.bind(this);
         this.doChangeCode = this.doChangeCode.bind(this);
         this.doAction = this.doAction.bind(this);
     }
 
-    doChangeUserName(e){
+    doChangeUsername(e){
         this.props.changeForm(e.target.value, this.props.code);
     }
 
     doChangeCode(e){
-        this.props.changeForm(this.props.userName, e.target.value);
+        this.props.changeForm(this.props.username, e.target.value);
     }
 
     doAction(e){
         e.preventDefault();
-        handleVerify(this.props.userName, this.props.code);
+        handleVerify(this.props.username, this.props.code);
     }
 
     render(){
@@ -31,7 +31,7 @@ class VerifyForm extends React.Component {
                 <div className="container">
                     <h1>Verify User</h1>
                     <form id="verifyForm" onSubmit={this.doAction} >
-                    <input type="text" placeholder="UserName" onChange={this.doChangeUserName} value={this.props.userName} required/>
+                    <input type="text" placeholder="Username" onChange={this.doChangeUsername} value={this.props.username} required/>
                     <input type="text" placeholder="Verification Code" pattern=".*" onChange={this.doChangeCode} value={this.props.code} required/>
                     <input type="submit" value="Verify" className='submit'/>
                     </form>
@@ -42,13 +42,13 @@ class VerifyForm extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    userName: state.verifyReducer.userName,
+    username: state.verifyReducer.username,
     code: state.verifyReducer.code
 });
 
 const mapDispatchToProps = dispatch  => {
     return {
-        changeForm: (userName, code) => dispatch(changeVerifyForm(userName, code))
+        changeForm: (username, code) => dispatch(changeVerifyForm(username, code))
     };
 }
 

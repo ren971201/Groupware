@@ -1,7 +1,7 @@
-export default function changeLoginForm(userName, password) {
+export default function changeLoginForm(username, password) {
     return {
         type: 'CHANGE_LOGIN_FORM',
-        userName: userName,
+        username: username,
         password: password
     }
 }

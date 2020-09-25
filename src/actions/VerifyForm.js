@@ -1,7 +1,7 @@
-export default function changeVerifyForm(userName, code) {
+export default function changeVerifyForm(username, code) {
     return {
         type: 'CHANGE_VERIFY_FORM',
-        userName: userName,
+        username: username,
         code: code
     }
 }

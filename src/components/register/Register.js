@@ -20,7 +20,7 @@ function register(user_name, email, password, onSuccess, onFailure) {
 }
 
 // 登録ボタンを押下
-export default function handleRegister(userName, email, password, confirmPassword) {
+export default function handleRegister(username, email, password, confirmPassword) {
     var onSuccess = function registerSuccess(result) {
         var cognitoUser = result.user;
         console.log('user name is ' + cognitoUser.getUsername());
@@ -34,7 +34,7 @@ export default function handleRegister(userName, email, password, confirmPasswor
     };
 
     if (password === confirmPassword) {
-        register(userName, email, password, onSuccess, onFailure);
+        register(username, email, password, onSuccess, onFailure);
     } else {
         alert('Passwords do not match');
     }

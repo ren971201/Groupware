@@ -1,6 +1,6 @@
 // ログインフォームの初期状態
 const initLoginState = {
-    userName: '',
+    username: '',
     password: ''
 };
 
@@ -9,7 +9,7 @@ export default function loginReducer (state = initLoginState, action){
     switch (action.type) {
         case 'CHANGE_LOGIN_FORM':
             return {
-                userName: action.userName,
+                username: action.username,
                 password: action.password
             };
         

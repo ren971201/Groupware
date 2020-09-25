@@ -12,8 +12,8 @@ function verify(email, code, onSuccess, onFailure) {
 }
 
 // 確認
-export default function handleVerify(userName, code) {
-    verify(userName, code,
+export default function handleVerify(username, code) {
+    verify(username, code,
         function verifySuccess(result) {
             console.log('call result: ' + result);
             console.log('Successfully verified');

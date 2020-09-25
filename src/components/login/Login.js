@@ -1,13 +1,13 @@
 import { createCognitoUser } from '../../../config'
 
 // ログイン処理
-function login(userName, password, onSuccess, onFailure) {
+function login(username, password, onSuccess, onFailure) {
     var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails({
-        Username: userName,
+        Username: username,
         Password: password
     });
 
-    var cognitoUser = createCognitoUser(userName);
+    var cognitoUser = createCognitoUser(username);
     cognitoUser.authenticateUser(authenticationDetails, {
         onSuccess: onSuccess,
         onFailure: onFailure
@@ -15,8 +15,8 @@ function login(userName, password, onSuccess, onFailure) {
 }
 
 // サインインボタンを押下したときの処理
-export default function handleLognin(userName, password) {
-    login(userName, password,
+export default function handleLognin(username, password) {
+    login(username, password,
         // サインイン成功処理
         function signinSuccess() {
             console.log('Successfully Logged In');

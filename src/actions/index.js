@@ -1,7 +1,7 @@
 import importChangeLoginForm from './LoginForm';
 import importChangeRegisterForm from './RegisterForm';
 import importChangeVerifyForm from './VerifyForm';
-import importInvertVisible from './Display';
+import importInvertVisible from './SideMenu';
 
 export const changeLoginForm = importChangeLoginForm;
 export const changeRegisterForm = importChangeRegisterForm;

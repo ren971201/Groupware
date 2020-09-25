@@ -1,7 +1,7 @@
-export default function changeRegisterForm(userName, email, password, confirmPassword) {
+export default function changeRegisterForm(username, email, password, confirmPassword) {
     return {
         type: 'CHANGE_REGISTER_FORM',
-        userName: userName,
+        username: username,
         email: email,
         password: password,
         confirmPassword: confirmPassword

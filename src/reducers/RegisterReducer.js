@@ -1,6 +1,6 @@
 // 登録フォームの初期状態
 const initRegisterState = {
-    userName: '',
+    username: '',
     email: '',
     password: '',
     confirmPassword: ''
@@ -11,7 +11,7 @@ export default function registerReducer (state = initRegisterState, action){
     switch (action.type) {
         case 'CHANGE_REGISTER_FORM':
             return {
-                userName: action.userName,
+                username: action.username,
                 email: action.email,
                 password: action.password,
                 confirmPassword: action.confirmPassword

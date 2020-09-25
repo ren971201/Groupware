@@ -7,22 +7,22 @@ import { changeLoginForm } from '../../actions/index';
 class LoginForm extends React.Component {
     constructor(props){
         super(props);
-        this.doChangeUserName = this.doChangeUserName.bind(this);
+        this.doChangeUsername = this.doChangeUsername.bind(this);
         this.doChangePassword = this.doChangePassword.bind(this);
         this.doAction = this.doAction.bind(this);
     }
 
-    doChangeUserName(e){
+    doChangeUsername(e){
         this.props.changeForm(e.target.value, this.props.password);
     }
 
     doChangePassword(e){
-        this.props.changeForm(this.props.userName, e.target.value);
+        this.props.changeForm(this.props.username, e.target.value);
     }
 
     doAction(e){
         e.preventDefault();
-        handleLognin(this.props.userName, this.props.password);
+        handleLognin(this.props.username, this.props.password);
     }
 
     render(){
@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
                 <div className="container">
                     <h1>Welcome</h1>
                     <form id="login-form" onSubmit={this.doAction}>
-                        <input type="text" placeholder="Username" onChange={this.doChangeUserName} value={this.props.userName} required/>
+                        <input type="text" placeholder="Username" onChange={this.doChangeUsername} value={this.props.username} required/>
                         <input type="password" placeholder="Password" pattern=".*" onChange={this.doChangePassword} value={this.props.password} required/>
                         <input type="submit" value="Login"  className='submit'/>
                     </form>
@@ -42,13 +42,13 @@ class LoginForm extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    userName: state.loginReducer.userName,
+    username: state.loginReducer.username,
     password: state.loginReducer.password
 });
 
 const mapDispatchToProps = dispatch  => {
     return {
-        changeForm: (userName, password) => dispatch(changeLoginForm(userName, password))
+        changeForm: (username, password) => dispatch(changeLoginForm(username, password))
     };
 }
 
