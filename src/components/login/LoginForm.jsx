@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import handleLognin from './Login';
-import { changeLoginForm } from '../ActionCreater';
+import { changeLoginForm } from '../../actions/index';
 
 class LoginForm extends React.Component {
     constructor(props){

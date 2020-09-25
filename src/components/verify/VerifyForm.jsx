@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import handleVerify from './Verify';
-import { changeVerifyForm } from '../ActionCreater';
+import { changeVerifyForm } from '../../actions/index';
 
 class VerifyForm extends React.Component {
     constructor(props){

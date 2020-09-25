@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import handleRegister from './Register';
-import { changeRegisterForm } from '../ActionCreater';
+import { changeRegisterForm } from '../../actions/index';
 
 class RegisterForm extends React.Component {
     constructor(props){

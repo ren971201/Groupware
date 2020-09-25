@@ -20,14 +20,15 @@
   .header .title {
     text-align: center; }
 
-.menu_btn {
+.menu-btn {
   display: inline-block;
   margin-top: 9px;
   margin-left: 9px;
   background-color: transparent;
   outline: none;
-  border: none; }
-  .menu_btn > span {
+  border: none;
+  cursor: pointer; }
+  .menu-btn > span {
     height: 2px;
     width: 35px;
     display: block;
@@ -144,7 +145,7 @@ ul {
 a {
   color: #1E90FF; }
 
-#side_top {
+#side-top {
   color: white; }
 
 .top-page {
@@ -152,73 +153,73 @@ a {
   width: 100%;
   margin: 30px; }
 
-.information_item {
+.information-item {
   width: 600px; }
-  .information_item_title {
+  .information-item-title {
     color: white;
     background-color: #1E90FF;
     text-align: center; }
-  .information_item_item {
+  .information-item-item {
     border: 1px solid #1E90FF;
     margin-top: 4px;
     padding-left: 16px; }
 
-.event_title {
+.event-title {
   color: #1E90FF;
   margin-top: 50px; }
 
-.event_item div {
+.event-item div {
   margin-top: 4px;
   margin-right: 4px; }
 
-.event_item_event {
+.event-item-event {
   width: 300px;
   display: inline-block;
   text-align: center; }
-  .event_item_event_title {
+  .event-item-event-title {
     color: white;
     background-color: #1E90FF; }
-  .event_item_event_item {
+  .event-item-event-item {
     border: 1px solid #1E90FF; }
 
-.event_item_schedule {
+.event-item-schedule {
   width: 300px;
   display: inline-block;
   text-align: center; }
-  .event_item_schedule_title {
+  .event-item-schedule-title {
     color: white;
     background-color: #1E90FF; }
-  .event_item_schedule_item {
+  .event-item-schedule-item {
     border: 1px solid #1E90FF; }
 
-.event_item_place {
+.event-item-place {
   width: 300px;
   display: inline-block;
   text-align: center; }
-  .event_item_place_title {
+  .event-item-place-title {
     color: white;
     background-color: #1E90FF; }
-  .event_item_place_item {
+  .event-item-place-item {
     border: 1px solid #1E90FF; }
 
-.event_item_start-time {
+.event-item-start-time {
   width: 150px;
   display: inline-block;
   text-align: center; }
-  .event_item_start-time_title {
+  .event-item-start-time-title {
     color: white;
     background-color: #1E90FF; }
-  .event_item_start-time_item {
+  .event-item-start-time-item {
     border: 1px solid #1E90FF; }
 
-.event_item_end-time {
+.event-item-end-time {
   width: 150px;
   display: inline-block;
   text-align: center; }
-  .event_item_end-time_title {
+  .event-item-end-time-title {
     color: white;
     background-color: #1E90FF; }
-  .event_item_end-time_item {
+  .event-item-end-time-item {
     border: 1px solid #1E90FF; }
 
 * {
